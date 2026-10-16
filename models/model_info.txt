@@ -1,0 +1,9 @@
+﻿Model name: YOLOv8n Face
+Weights file: models/yolov8n-face.pt
+Source repository: https://github.com/akanametov/yolo-face
+Release page: https://github.com/akanametov/yolo-face/releases
+Model format: PyTorch (.pt)
+Framework: Ultralytics YOLO
+Purpose: Face detection and bounding-box generation
+License: Repository identifies GPL-3.0; review applicable model and framework terms before distribution.
+Verification: Loaded successfully using Ultralytics; detected 11 face candidates in the first frame of data/sample_video.mp4.

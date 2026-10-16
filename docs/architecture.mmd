@@ -1,0 +1,26 @@
+﻿flowchart TD
+    A["Video Input<br/>Local MP4 or RTSP"] --> B["OpenCV Frame Reader"]
+    B --> C["YOLO Face Detection"]
+    C --> D["ByteTrack<br/>Track IDs"]
+    D --> E["Face Crop Extraction"]
+    E --> F["InsightFace<br/>Embedding Generation"]
+    F --> G{"Identity Match?"}
+
+    G -->|Existing identity| H["Reuse Face ID"]
+    G -->|No match| I["Register New Identity"]
+
+    H --> J["Event Manager"]
+    I --> J
+
+    J --> K["SQLite: Faces"]
+    J --> L["SQLite: Entry and Exit Events"]
+    J --> M["Timestamped Face Images"]
+    J --> N["logs/events.log"]
+
+    K --> O["Unique Registered Identity Count"]
+    L --> P["Visit Event History"]
+
+    Q["config.json"] -.-> B
+    Q -.-> C
+    Q -.-> F
+    Q -.-> J

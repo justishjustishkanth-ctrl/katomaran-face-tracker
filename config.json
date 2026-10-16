@@ -1,0 +1,12 @@
+{
+  "video_source": "data/sample_video.mp4",
+  "face_model_path": "models/yolov8n-face.pt",
+  "database_path": "data/visitors.db",
+  "detection_skip_frames": 2,
+  "track_max_lost_frames": 30,
+  "recognition_threshold": 0.45,
+  "face_detector_confidence": 0.5,
+  "log_file": "logs/events.log",
+  "entry_image_dir": "logs/entries",
+  "exit_image_dir": "logs/exits"
+}

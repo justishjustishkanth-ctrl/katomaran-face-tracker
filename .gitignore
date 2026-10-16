@@ -1,0 +1,10 @@
+﻿.venv/
+.venv-1/
+__pycache__/
+.pytest_cache/
+.env
+data/*.db
+data/*.mp4
+models/*.pt
+models/*.onnx
+logs/*.log

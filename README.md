@@ -351,5 +351,5 @@ technology decisions, assumptions, test results, and known limitations.
 
 See [`docs/architecture.mmd`](docs/architecture.mmd).
 
-This project is a part of a hackathon run by https://katomaran.com
+
 

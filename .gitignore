@@ -3,8 +3,7 @@
 __pycache__/
 .pytest_cache/
 .env
-data/*.db
-data/*.mp4
+data/
 models/*.pt
 models/*.onnx
-logs/*.log
+logs/

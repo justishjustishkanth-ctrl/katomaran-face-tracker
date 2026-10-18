@@ -1,4 +1,10 @@
-﻿from ultralytics import YOLO
+﻿
+import logging
+
+from ultralytics import YOLO
+
+
+logger = logging.getLogger("face_tracker")
 
 
 class FaceDetector:
@@ -7,6 +13,7 @@ class FaceDetector:
     def __init__(self, model_path, confidence=0.5):
         self.model = YOLO(model_path)
         self.confidence = confidence
+        logger.info("Face detector initialized: %s", model_path)
 
     def detect(self, frame):
         """Return boxes as (x1, y1, x2, y2, confidence)."""
@@ -29,6 +36,7 @@ class FaceDetector:
                 score = float(box.conf[0])
                 faces.append((x1, y1, x2, y2, score))
 
+        logger.debug("Detection completed: faces=%s", len(faces))
         return faces
 
     def track(self, frame):
@@ -56,5 +64,11 @@ class FaceDetector:
                 tracked_faces.append(
                     (track_id, x1, y1, x2, y2, score)
                 )
+
+        # DEBUG avoids writing one message for every video frame.
+        logger.debug(
+            "Tracking completed: active detections=%s",
+            len(tracked_faces),
+        )
 
         return tracked_faces

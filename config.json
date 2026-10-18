@@ -8,5 +8,6 @@
   "face_detector_confidence": 0.5,
   "log_file": "logs/events.log",
   "entry_image_dir": "logs/entries",
-  "exit_image_dir": "logs/exits"
+  "exit_image_dir": "logs/exits",
+  "show_video": true
 }

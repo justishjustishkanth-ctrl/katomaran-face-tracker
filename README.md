@@ -330,7 +330,7 @@ Do not substitute estimated values for actual measurements.
 
 ## Demonstration
 
-**Project Demo:** [Watch the Katomaran Face Tracker Demo](https://youtu.be/9Lld3HEuEl4)
+**Project Demo:** [Watch the Katomaran Face Tracker Demo](https://youtu.be/njDCHThPNoM)
 
 The demonstration video is hosted on YouTube. The application uses YOLO face detection, InsightFace embeddings, ByteTrack tracking, and SQLite event logging.
 

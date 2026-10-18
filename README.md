@@ -1,4 +1,5 @@
-﻿# Intelligent Face Tracker with Auto-Registration
+﻿![Katomaran Face Tracker Showcase](docs/face-tracker-showcase.png)
+# Intelligent Face Tracker with Auto-Registration
 
 ## Objective
 
@@ -351,3 +352,4 @@ technology decisions, assumptions, test results, and known limitations.
 See [`docs/architecture.mmd`](docs/architecture.mmd).
 
 This project is a part of a hackathon run by https://katomaran.com
+
